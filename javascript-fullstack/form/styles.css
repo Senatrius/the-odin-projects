@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Ruda';
+  src: url('./assets/Ruda-VariableFont_wght.ttf');
+  font-weight: 500 900;
+}
+
+*, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  min-height: calc(100vh - 2rem);
+  display: flex;
+  gap: 1rem;
+  font-family: 'Ruda', system-ui, sans-serif;
+}
+
+.image {
+  width: 32.5%;
+  background: url('./assets/landscape.jpg') no-repeat center center/cover;
+  border-radius: .75rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 67.5%;
+  border-radius: .75rem;
+  border: 1px solid #B0C2D8;
+  padding: 2.5rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+  font-weight: 900;
+  letter-spacing: .075em;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.15rem;
+  font-weight: 450;
+  line-height: 140%;
+  margin-bottom: 1.75rem;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+label {
+  font-size: 1rem;
+  letter-spacing: 0.075em;
+}
+
+input {
+  padding: .5rem .75rem;
+  border: 1px solid #B0C2D8;
+  border-radius: .25rem;
+  box-shadow: 0 0 0 2px transparent;
+  outline: none;
+}
+
+input:hover {
+  border: 1px solid #1F2F46;
+}
+
+input:focus-visible {
+  border: 1px solid #1F2F46;
+  box-shadow: 0 0 0 2px #1F2F46;
+}
+
+button {
+  margin-top: .75rem;
+  align-self: flex-start;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 650;
+  background-color: #1F2F46;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background-color: #2D4B75;
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    min-height: 15rem;
+  }
+
+  main {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 2.5rem
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: .9rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
