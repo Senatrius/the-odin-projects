@@ -91,6 +91,11 @@ input:focus-visible {
   box-shadow: 0 0 0 2px #1F2F46;
 }
 
+input:invalid {
+  border: 1px solid #9b0202;
+  box-shadow: 0 0 0 2px #9b0202;
+}
+
 button {
   margin-top: .75rem;
   align-self: flex-start;
