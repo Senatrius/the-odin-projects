@@ -78,8 +78,8 @@ section {
 
   & p {
     margin-bottom: 1rem;
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 
@@ -109,9 +109,40 @@ section {
 }
 
 .card-value {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
   align-self: flex-end;
   justify-self: flex-end;
   line-height: 75%;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 .25rem;
+}
+
+thead td {
+  font-weight: 600;
+}
+
+tbody tr {
+  background-color: white;
+
+  & :first-of-type {
+    padding-left: .5rem;
+  }
+
+
+  & :last-of-type {
+    padding-right: .5rem;
+  }
+
+  & a {
+    padding: 0!important;
+  }
+}
+
+tbody td {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
