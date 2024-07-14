@@ -15,6 +15,10 @@ body {
   font-family: 'Vollkorn', system-ui, sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 .left {
   color: white;
   flex: 1;
@@ -25,6 +29,7 @@ body {
 
 .right {
   flex: 3;
+  padding: 0 2rem;
   background-color: #F2F6FF;
   min-height: 100svh;
   overflow-y: scroll;
@@ -50,7 +55,6 @@ body {
 
   & li {
     display: block;
-    list-style: none;
     margin-bottom: .25rem;
   }
 
@@ -67,4 +71,47 @@ body {
   & a:hover, & a:focus {
     background: linear-gradient(to right, #18125B00, #201A40ff);
   }
+}
+
+section {
+  margin-top: 2.5rem;
+
+  & p {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+.card-list {
+  display: flex;
+  gap: 1rem;
+
+  & > * {
+    flex: 1;
+    min-height: 8rem;
+  }
+
+  & div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+  }
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.card-value {
+  font-size: 2.5rem;
+  font-weight: 500;
+  align-self: flex-end;
+  justify-self: flex-end;
+  line-height: 75%;
 }
